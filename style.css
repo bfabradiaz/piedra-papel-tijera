@@ -1,0 +1,128 @@
+.icono{
+    width: 200px;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 219, 250);
+    color: rgba(0,0,0,0.808);
+    /* color: #601155; */
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+}
+
+img{
+    cursor:pointer;
+    margin: 0 20px;
+}
+
+img:hover{
+    width: 220px;
+}
+
+h1, h2, h3{
+    text-align: center;
+    font-size: 70px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+}
+
+h2{
+    font-size: 40px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+.opciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    height: 250px;
+}
+
+.tabla-puntajes{
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+}
+
+.usuario{
+    background-color: #FFDE55;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    left: -20px
+}
+
+.pc{
+    background-color: #FFDE55;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    right: -20px;
+}
+
+#puntaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+#puntaje span{
+    padding: 0 10px;
+}
+
+
+.--piedra, .--papel, .--tijera{
+    animation-name: ola;
+    animation-duration: .6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.--papel{
+    animation-delay: .1s;
+}
+
+.--tijera{
+    animation-delay: .2s;
+}
+
+@keyframes ola {
+    from{
+        transform: translateY(-90px);
+    }
+    to{
+        transform: translateY(100px);
+    }
+}
+
+p{
+    width: 100%;
+    height: 100%;
+    font-size: 300px;
+    position: absolute;
+    color: white;
+    background-color: rgba(32,31,31, 0.74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    z-index: 99;
+}
